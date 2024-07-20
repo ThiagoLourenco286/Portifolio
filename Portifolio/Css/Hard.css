@@ -1,0 +1,84 @@
+#hSkills {
+    margin-top: 150px;
+}
+
+#hSkills h1 {
+    margin-bottom: 80px;
+    font-size: 50px;
+}
+
+#hSkills p {
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+
+.hardSkills img {
+    width: 60px;
+}
+
+.hardSkills {
+    max-width: 700px;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.hardSkills li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-card {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #0f172a linear-gradient(to right, transparent 50%, var(--color) 0);
+}
+
+.progress-card h5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+}
+
+.progress-card:hover {
+    transform: scale3d(1.1, 1.1, 1)
+}
+
+.progress-cardh5 span {
+    font-size: 1rem;
+}
+
+.progress-card p {
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color);
+    z-index: 2;
+}
+
+.progress-card::before {
+    content: "";
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+    border-radius: 0 100% 100% 0/50%;
+    background-color: var(--color);
+    transform: rotate(calc(((var(--value) - 50) * 0.01turn)));
+}
+
+.progress-card::after {
+    content: "";
+    position: absolute;
+    inset: 8px;
+    border-radius: 50%;
+    background: #0f172a;
+}

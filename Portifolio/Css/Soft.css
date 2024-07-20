@@ -1,0 +1,20 @@
+#softSkills {
+    margin-top: 150px;
+}
+
+#softSkills h1 {
+    margin-bottom: 100px;
+    font-size: 50px;
+}
+
+.card {
+    background-clip: text;
+    color: transparent;
+    max-width: 400px;
+    text-align: center;
+    border: none;
+}
+
+.card:hover {
+    transform: scale3d(1.1, 1.1, 1);
+}

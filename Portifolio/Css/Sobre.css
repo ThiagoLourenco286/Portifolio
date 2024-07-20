@@ -1,0 +1,41 @@
+#sobre {
+    padding: 15px;
+    margin-bottom: 150px;
+}
+
+#sobre h1 {
+    margin-bottom: 80px;
+    font-size: 50px;
+}
+
+#sobre p {
+    font-size: 18px;
+    padding: 15px;
+}
+
+.carousel {
+    height: 300px;
+}
+
+.carousel>.carousel-indicators button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: var(--dark);
+}
+
+.carousel-item {
+    width: 430px;
+    height: 300px;
+}
+
+.carousel-inner img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bia {
+    font-size: 2rem;
+}
